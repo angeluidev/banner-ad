@@ -1,0 +1,111 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+.container {
+    width: 250px;
+    height: 250px; 
+    background-color: #E9AFA3;
+    position: relative;
+    margin: auto;
+    transition: transform .5s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container .inner {
+    width: 220px;
+    height: 220px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container .inner .child {
+    width: 220px;
+    height: 80px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20;
+    bottom: 0;
+    margin: auto;
+}
+
+.child {
+    text-align: center;
+}
+
+h3 {
+    font-size: 11px;
+    font-family: 'Noto Serif SC', serif;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    color: #333333;
+}
+
+h1 {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 100px;
+    background-color: #E9AFA3;
+    border: none;
+    color: #ffffff;
+    font-weight: 470;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    /* background: url("Bella/second.jpeg"); */
+    animation: animate infinite 10s ease-in-out;
+}
+
+
+@keyframes animate{
+    0% {
+        background: url("Bella/second.jpeg");
+    }
+    20% {
+        background: url("Bella/second.jpeg");
+    }
+    40% {
+        background: url("Bella/second.jpeg");
+    }
+    60% {
+        background: url("Bella/third.jpeg");
+    }
+    80% {
+        background: url("Bella/third.jpeg");
+    }
+    100% {
+        background: url("Bella/third.jpeg");
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        text-align: center;
+    }
+    .container {
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
